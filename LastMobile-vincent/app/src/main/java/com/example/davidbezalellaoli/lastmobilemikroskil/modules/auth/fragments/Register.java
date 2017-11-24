@@ -42,8 +42,6 @@ public class Register extends Fragment {
 
     private TextView[] textViews;
     private String[] messages;
-    private AlertDialog.Builder builder;
-    private AlertDialog alertDialog;
 
 
 
@@ -88,8 +86,6 @@ public class Register extends Fragment {
         messages = new String[]{getString(R.string.error_empty_name)
                 ,getString(R.string.error_empty_nim)
                 ,getString(R.string.error_empty_password)};
-        builder = new AlertDialog.Builder(getContext());
-        alertDialog = builder.create();
     }
 
     private void event() {
